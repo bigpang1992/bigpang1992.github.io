@@ -230,6 +230,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   animation: fadeInDown 0.8s ease;
 }
 .hero-title { margin-bottom: 16px; animation: fadeInUp 0.8s ease 0.2s both; }
+.hero-logo-img {
+  height: clamp(80px, 15vw, 140px); width: auto;
+  filter: drop-shadow(0 0 30px rgba(255, 144, 0, 0.4));
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
 .hero-title-line {
   font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900;
   background: var(--gradient-primary);
