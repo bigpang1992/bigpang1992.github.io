@@ -165,7 +165,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex; align-items: center; gap: 0;
   font-size: 1.2rem; font-weight: 700; color: var(--text-heading);
 }
-.nav-logo:hover { opacity: 0.9; }
+.nav-logo:hover { opacity: 0.85; transform: scale(1.02); }
+.nav-logo-img { height: 32px; width: auto; transition: all 0.3s ease; }
 
 /* PornHub-style Logo */
 .pornhub-logo {
