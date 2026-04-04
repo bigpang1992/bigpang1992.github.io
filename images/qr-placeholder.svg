@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#12122a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)" rx="16"/>
+  <rect x="50" y="50" width="200" height="200" fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="8,4" rx="8" opacity="0.5"/>
+  <text x="150" y="140" font-family="sans-serif" font-size="36" fill="#00d4ff" text-anchor="middle" opacity="0.8">📱</text>
+  <text x="150" y="175" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">请替换为真实收款码</text>
+  <text x="150" y="195" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">将图片放入 static/medias/reward/</text>
+</svg>
