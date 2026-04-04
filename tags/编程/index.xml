@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on 穷Hub</title><link>https://bigpang1992.github.io/tags/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on 穷Hub</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bigpang1992.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>用AI写了三个月代码，说点真心话</title><link>https://bigpang1992.github.io/posts/ai-coding-real-talk/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://bigpang1992.github.io/posts/ai-coding-real-talk/</guid><description>&lt;p&gt;去年底开始正式在工作里用 AI 写代码，到现在差不多三个月了。网上铺天盖地的都是&amp;quot;AI 改变编程&amp;quot;&amp;ldquo;程序员要失业&amp;rdquo;，我想从一个普通开发者的角度说说真实体验。&lt;/p&gt;
+&lt;h2 id="先说结论能用但没那么神"&gt;先说结论：能用，但没那么神&lt;/h2&gt;
+&lt;p&gt;Copilot 现在是我写代码的标配了，每天都在用。但你要问我效率提升了多少，我只能说——看情况。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;好用的场景：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;写重复性代码的时候是真爽，比如一堆 CRUD 接口、表单验证、单元测试之类的。以前要一个个敲的东西，现在 Tab 一下就出来了，准确率还挺高。&lt;/p&gt;
+&lt;p&gt;还有写正则表达式的时候，以前我得上 StackOverflow 翻半天，现在注释写清楚需求，它直接给你生成，还附带解释。讲真这个体验确实很爽。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;难受的场景：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一旦涉及到业务逻辑比较复杂的部分，它就开始瞎猜了。有几次它自信满满地给我生成了一大段代码，看着挺对的，跑起来全是 bug。最坑的是那种&amp;quot;看着对但逻辑错&amp;quot;的代码，调试起来比自己从头写还费时间。&lt;/p&gt;
+&lt;p&gt;还有一种情况很烦——它不了解你的项目上下文。你用了什么框架、什么版本、什么约定，它不知道。所以经常给你推荐一些已经废弃的 API，或者跟你项目风格完全不一样的写法。&lt;/p&gt;
+&lt;h2 id="最大的隐患变懒了"&gt;最大的隐患：变懒了&lt;/h2&gt;
+&lt;p&gt;这个才是我最想说的。用了 AI 之后，我明显感觉到自己在&amp;quot;偷懒&amp;quot;。&lt;/p&gt;
+&lt;p&gt;以前遇到不会的东西，我会去看文档、查源码、理解原理。现在的第一反应是&amp;quot;问 AI&amp;quot;，拿到答案就用，不去深究为什么。短期来看效率是提高了，但长期下来技术成长肯定会受影响。&lt;/p&gt;
+&lt;p&gt;上个月有一次，同事问我一个关于 Promise 执行顺序的问题，我竟然愣了一下才反应过来。以前这种基础知识是随口就答的，现在反而需要想一想。&lt;/p&gt;
+&lt;p&gt;说真的，这个趋势让我有点慌。&lt;/p&gt;
+&lt;h2 id="我的使用策略"&gt;我的使用策略&lt;/h2&gt;
+&lt;p&gt;折腾了三个月，我的结论是：AI 是工具，不是拐杖。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;重复劳动放心交给它&lt;/strong&gt; - CRUD、模板代码、测试用例，直接用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心逻辑自己写&lt;/strong&gt; - 涉及业务核心的代码，自己动脑子&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成的代码一定要审&lt;/strong&gt; - 不要无脑 Tab，每一行都要理解&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定期脱离 AI 练手&lt;/strong&gt; - 保持手写代码的能力&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其实跟其他工具一样，关键在于你怎么用它。刀能切菜也能伤手，道理都一样。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上纯属个人感受，不代表任何立场。你们用 AI 写代码的体验怎么样？欢迎来打赏区告诉我（不是）。&lt;/p&gt;</description></item></channel></rss>

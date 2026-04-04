@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>本地部署 on 穷Hub</title><link>https://bigpang1992.github.io/tags/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/</link><description>Recent content in 本地部署 on 穷Hub</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bigpang1992.github.io/tags/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>本地部署DeepSeek，我的电脑差点起飞</title><link>https://bigpang1992.github.io/posts/local-deploy-deepseek/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://bigpang1992.github.io/posts/local-deploy-deepseek/</guid><description>&lt;p&gt;一直想在本地跑一个大模型，不用联网不怕审查不花钱。上周终于动手了，选了 DeepSeek-V3 的量化版，用 Ollama 部署。&lt;/p&gt;
+&lt;p&gt;记录一下全过程，给同样想折腾的兄弟省点时间。&lt;/p&gt;
+&lt;h2 id="我的配置"&gt;我的配置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU：i7-13700K&lt;/li&gt;
+&lt;li&gt;内存：32GB DDR5&lt;/li&gt;
+&lt;li&gt;显卡：RTX 4070Ti 12GB&lt;/li&gt;
+&lt;li&gt;系统：Windows 11&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;先说结论——这个配置跑 DeepSeek 的 7B 量化版完全没问题，跑 32B 就很勉强了。&lt;/p&gt;
+&lt;h2 id="安装步骤"&gt;安装步骤&lt;/h2&gt;
+&lt;h3 id="第一步装-ollama"&gt;第一步：装 Ollama&lt;/h3&gt;
+&lt;p&gt;直接去 &lt;a href="https://ollama.com"&gt;ollama.com&lt;/a&gt; 下载安装包，一路 Next 就行。装完在终端输入 &lt;code&gt;ollama --version&lt;/code&gt; 确认一下。&lt;/p&gt;
+&lt;h3 id="第二步拉模型"&gt;第二步：拉模型&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ollama pull deepseek-v3:7b-q4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;7B 的 Q4 量化版大概 4GB 左右，我的网速下载了十来分钟。&lt;/p&gt;
+&lt;h3 id="第三步跑起来"&gt;第三步：跑起来&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ollama run deepseek-v3:7b-q4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;到这一步就能聊了。输入中文直接对话，体验跟用网页版差不多。&lt;/p&gt;
+&lt;h3 id="第四步可选装个前端"&gt;第四步（可选）：装个前端&lt;/h3&gt;
+&lt;p&gt;光在终端里聊天也太极客了，装个好看点的前端界面。我用的 Open WebUI：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -d -p 3000:8080 --add-host&lt;span style="color:#ff79c6"&gt;=&lt;/span&gt;host.docker.internal:host-gateway ghcr.io/open-webui/open-webui:main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;打开 &lt;code&gt;localhost:3000&lt;/code&gt; 就能看到一个类 ChatGPT 的界面了。&lt;/p&gt;
+&lt;h2 id="踩坑记录"&gt;踩坑记录&lt;/h2&gt;
+&lt;h3 id="坑1显存不够"&gt;坑1：显存不够&lt;/h3&gt;
+&lt;p&gt;我一开始贪心下了 32B 的版本，结果一运行显存直接爆了，系统卡了大概十秒才缓过来。12GB 显存老实跑 7B 吧。&lt;/p&gt;</description></item></channel></rss>
