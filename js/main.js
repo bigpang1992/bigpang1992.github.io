@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var typingEl = document.getElementById('typing-text');
   if (typingEl) {
     var phrases = [
-      '欢迎来到穷逼总部 💸',
+      '欢迎来到穷Hub 💸',
       '在这里分享技术与生活 📝',
       '如果喜欢请打赏支持 💰',
       '您的慷慨是我最大的动力 ✨',
