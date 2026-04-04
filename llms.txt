@@ -1,0 +1,38 @@
+# 穷Hub
+
+> 一个在互联网荒野流浪的数字乞丐的个人主页 | 技术分享 · 生活感悟 · 赛博要饭
+
+穷Hub 是由 BigPang 运营的中文个人博客，主要分享 AI 技术实践、工具评测、编程经验和互联网生活感悟。
+
+## 网站信息
+
+- 站长：BigPang
+- 网址：https://bigpang1992.github.io/
+- 语言：中文（简体）
+- 主题：AI技术、编程开发、工具评测、互联网生活
+- 更新频率：每周更新
+
+## 内容分类
+
+- **技术分享**：AI编程实践、本地部署教程、开发经验
+- **干货推荐**：工具对比评测、学习指南、资源推荐
+- **千奇百怪**：互联网趣事、AI新奇应用
+- **生活随笔**：个人经历、副业分享、职场感悟
+
+## 近期文章
+
+- [普通人怎么跟上AI时代？一个打工人的生存指南](https://bigpang1992.github.io/posts/ai-survival-guide/)
+- [从ChatGPT到Claude再到ChatGPT又回Claude](https://bigpang1992.github.io/posts/chatgpt-vs-claude/)
+- [AI生成的愚人节整活合集](https://bigpang1992.github.io/posts/april-fools-ai-pranks/)
+- [本地部署DeepSeek，我的电脑差点起飞](https://bigpang1992.github.io/posts/local-deploy-deepseek/)
+- [Sora发布一年多了，AI视频生成到底能不能用？](https://bigpang1992.github.io/posts/ai-video-generation-review/)
+- [靠AI搞了个副业，一个月到账情况公开](https://bigpang1992.github.io/posts/ai-side-hustle-income/)
+- [AI替代程序员？我劝你醒醒](https://bigpang1992.github.io/posts/ai-replace-programmers/)
+- [ChatGPT终于有记忆了，但没完全有](https://bigpang1992.github.io/posts/chatgpt-memory-experience/)
+- [2026年了，AI画图到底哪家强？6款工具横评](https://bigpang1992.github.io/posts/ai-art-tools-review/)
+- [用AI写代码三个月，说几句真心话](https://bigpang1992.github.io/posts/ai-coding-real-talk/)
+
+## 联系方式
+
+- GitHub：https://github.com/bigpang1992
+- 邮箱：291601203@qq.com
