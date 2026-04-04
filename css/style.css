@@ -1,5 +1,5 @@
 /* ============================================
-   赛博要饭总部 - CyberBeg Theme
+   穷逼 - CyberBeg Theme
    Cyberpunk Dark Theme with Neon Accents
    ============================================ */
 
@@ -162,11 +162,34 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex; align-items: center; justify-content: space-between;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 0;
   font-size: 1.2rem; font-weight: 700; color: var(--text-heading);
 }
-.nav-logo:hover { color: var(--primary); }
-.logo-icon { font-size: 1.5rem; }
+.nav-logo:hover { opacity: 0.9; }
+
+/* PornHub-style Logo */
+.pornhub-logo {
+  display: inline-flex; align-items: center; gap: 0;
+  font-family: 'Arial Black', 'Helvetica Neue', sans-serif;
+  font-weight: 900; font-style: italic; letter-spacing: -1px;
+}
+.ph-white {
+  color: #fff; padding: 2px 6px;
+}
+.ph-orange {
+  background: #ff9000; color: #000; padding: 2px 8px;
+  border-radius: 6px; margin-left: 2px;
+}
+.pornhub-logo-xl { font-size: 4rem; }
+.pornhub-logo-xl .ph-white { padding: 4px 10px; }
+.pornhub-logo-xl .ph-orange { padding: 4px 14px; border-radius: 10px; margin-left: 4px; }
+.pornhub-logo-lg { font-size: 2.5rem; }
+.pornhub-logo-lg .ph-white { padding: 3px 8px; }
+.pornhub-logo-lg .ph-orange { padding: 3px 10px; border-radius: 8px; margin-left: 3px; }
+@media (max-width: 768px) {
+  .pornhub-logo-xl { font-size: 2.8rem; }
+  .pornhub-logo-lg { font-size: 2rem; }
+}
 .nav-menu { display: flex; gap: 4px; }
 .nav-link {
   padding: 8px 16px; border-radius: 8px;
